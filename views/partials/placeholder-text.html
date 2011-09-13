@@ -1,93 +1,3 @@
-<!doctype html>
-
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]> <html class="no-js" lang="en"> 		   <![endif]-->
-
-<head>
-	<meta charset="utf-8">
-
-  	<!-- You can use .htaccess and remove these lines to avoid edge case issues. -->
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  	<title>❖ Workless</title>
-
-  	<meta name="author" content="">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-
-  	<!-- Mobile viewport optimized -->
-  	<meta name="viewport" content="width=device-width,initial-scale=1">
-	
-	<!-- Adaptive Images -->
-	<script type="text/javascript">
-	var device_width=screen.width;var device_height=screen.height;if(device_width>device_height){ai_width=device_width;}else{ai_width=device_height;}document.cookie='resolution='+ai_width+'; expires=; path=/';
-	</script>
-
-  	<!-- CSS. No need to specify the media attribute unless specifically targeting a media type, leaving blank implies media=all -->
-  	<link rel="stylesheet" href="assets/css/plugins.css">
-	<link rel="stylesheet" href="assets/css/workless.css">
-  	<!-- End CSS-->
-
-	<!-- Googlelicious -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css" />
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold" type="text/css" />
-
-	<!-- Load up some favicons -->
-  	<link rel="shortcut icon" href="favicon.ico">
-  	<link rel="apple-touch-icon" href="{pyro:theme:img file="touch/apple-touch-icon.png"}">
-  	<link rel="apple-touch-icon" href="{pyro:theme:img file="touch/apple-touch-icon-precomposed.png"}">
-  	<link rel="apple-touch-icon" href="{pyro:theme:img file="touch/apple-touch-icon-57x57-precomposed.png"}">
-  	<link rel="apple-touch-icon" href="{pyro:theme:img file="touch/apple-touch-icon-72x72-precomposed.png"}">
-  	<link rel="apple-touch-icon" href="{pyro:theme:img file="touch/apple-touch-icon-114x114-precomposed.png"}">
-
-  	<!-- All JavaScript at the bottom, except for Modernizr / Respond. Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries -->
-  	<script src="assets/js/libs/modernizr.js"></script>
-
-</head>
-
-<body onload="prettyPrint()">
-
-<!-- Topbar -->
-<div class="topbar">
-	<ul>
-		<li><a href="#scaffold">Scaffolding</a></li>
-		<li><a href="#help">Helpers</a></li>
-		<li><a href="#">Github</a></li>
-	</ul>
-</div>
-<!-- End top bar-->
-
-<!-- container -->
-<div class="container">	
-	
-	<!-- main -->
-	<div id="main">
-		
-		<hr>
-		
-		<header>
-			<div id="logo">
-				<a href="#"><h1>❖ Workless</h1></a>
-			</div>
-		
-			<nav id="primary">
-				<ul>
-					<li>
-						<a href="#">Options</a>
-							<ul>
-								<li><a href="#scaffold">Scaffolding</a></li>
-								<li><a href="#help">Helpers</a></li>
-							</ul>
-					</li>
-					<li><a href="#">Github</a></li>
-				</ul>
-			</nav>
-   		</header>
-
-		<hr>
-
 		<section>
 			<h3>What is Workless?</h3>
 
@@ -101,20 +11,16 @@
 				At it's core Workless is simply a mashup of all the things I like about <a class="tooltip" title="Visit HTML5 Boilerplate" href="https://github.com/paulirish/html5-boilerplate" title="HTML5 Boilerplate">HTML5 Boilerplate</a> and <a class="tooltip" title="Visit Twitter Bootstrap" href="https://github.com/twitter/bootstrap" title="Twitter Bootstrap">Twitter Bootstrap</a> with some additional stuff which I tend to use on every project such as PrettyPhoto for lightboxes, Tipsy for tooltips, Prettify for styling and colorizing code and various other bits and pieces.
 			</p>
 			<p>
-				Workless comes with responsive media queries setup for <span class="highlight">'Mobile Portrait'</span>, <span class="highlight">'Mobile Landscape'</span>, <span class="highlight">'Tablet Portrait'</span>, <span class="highlight">'Tablet Landscape/Small Browser'</span> and <span class="highlight">'Large Browser'</span>, you can demo the effect right now by simply scaling your browser window. The blue button above the logo will show what query is running.
+				Workless comes with responsive media queries setup for <span class="highlight">'Mobile Portrait'</span>, <span class="highlight">'Mobile Landscape'</span>, <span class="highlight">'Tablet Portrait'</span>, <span class="highlight">'Tablet Landscape/Small Browser'</span> and <span class="highlight">'Large Browser'</span>, you can demo the effect right now by simply scaling your browser window. The blue button above the logo will show what query is running. And the image shown below will resize to fit the theme.
 			<p>
 				Remember, this isn't a 'Use this, its great!', it's simply a way I found to improve my workflow and cut down on repetitive tasks in every project. Feel free to use/abuse and hack into something that fits your workflow.
 			</p>
 		</section>
 		
 		<hr>
-		
+			
 		<section>
-			<h3>Adaptive Images</h3>
-			<p>
-				Adaptive images is simply a small PHP script that resizes images based on the screen resolution. This prevents users on mobile devices downloading full size images meant for web. I.E: Web image = 500kb, Mobile image = 30kb.
-			</p>
-			<img src="ai-images/workless.jpg" alt="Workless" />
+			{pyro:theme:image file="pyrocms-workless.jpg"}
 		</section>
 		
 		<hr>
@@ -479,43 +385,4 @@
         			</fieldset>
       			</form>
     		</div>
-			
 		</section>
-		
-		<footer>
-			<p>Copyright &copy; 2011. All Rights Reserved.</p>
-    	</footer>
-		
-    </div>
-	<!-- /main -->
-
-</div>
-<!-- /container -->
-
-  <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery.js"><\/script>')</script>
-
-  <!-- Scripts -->
-  <script defer src="assets/js/plugins.js"></script>
-  <script defer src="assets/js/script.js"></script>
-  <!-- End Scripts -->
-
-  <!-- Change UA-XXXXX-X to be your site's ID -->
-  <script>
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
-
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6. chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-  
-</body>
-</html>

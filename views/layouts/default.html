@@ -1,0 +1,62 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en"> 		   <![endif]-->
+
+{pyro:theme:partial name="head"}
+
+<!-- Google Analytics -->
+{pyro:integration:analytics}
+<!-- End Google Analytics -->
+
+<body onload="prettyPrint()">
+
+{if '{pyro:theme:options option="top-bar"}' == 'yes'}
+	{pyro:theme:partial name="top-bar"}
+{/if}
+
+<!-- container -->
+<div class="container">	
+	
+	<!-- main -->
+	<div id="main">
+		
+		<hr>
+		
+		{pyro:theme:partial name="header"}
+
+		<hr>
+
+		<section>
+			{pyro:template:body}
+			{if '{pyro:theme:options option="placeholder-text"}' == 'yes'}
+				{pyro:theme:partial name="placeholder-text"}
+			{/if}
+		</section>
+		
+		{pyro:theme:partial name="footer"}
+		
+    </div>
+	<!-- /main -->
+
+</div>
+<!-- /container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Scripts -->
+  {pyro:theme:js file="plugins.js"}
+  {pyro:theme:js file="script.js"}
+  {pyro:template:metadata}
+  <!-- End Scripts -->
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6. chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

@@ -40,7 +40,7 @@ Base
 -------------------------------------------------------------------------------------------------------
 */
 
-html, body { margin-top: 40px; width: 100%; background: #e8e4e7; }
+html, body { width: 100%; background: #e8e4e7; }
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { height: 100%; min-height: 100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; line-height: 1.231; text-rendering: optimizeLegibility; margin: 0;  overflow-x: hidden; }
 body, button, input, select, textarea { font-family: sans-serif; color: #333333; }
@@ -1410,7 +1410,7 @@ Primary styles. (Mobile first, everything else is overridden with @media queries
 #main {
 	background: #ffffff;
 	width: 230px;
-	padding: 25px 25px 100px 25px;
+	padding: 65px 25px 100px 25px;
 	margin: 0 auto;
 	border: 1px solid #ffffff;
 	grid-shadow: 0px 0px 3px #bbbbbb;
