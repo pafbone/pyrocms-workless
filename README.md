@@ -7,6 +7,7 @@ PyroCMS Workless is a slimmed down version of iKreativ's Workless framework. It 
 To use this theme simply download (or clone) and place the pyrocms_workless folder in your addons/default/themes folder. Go to CP > Design > Theme List and select this theme. Note: by default placeholder elements are shown and there is a top bar fixed at the top of the viewport. Both of these can be turned off by clicking on the Options button of this theme in the admin panel.
 
 Several files are included in the theme but will need to be manually moved to the site root and modified if you wish to use them:
+
 * robots.txt
 * crossdomain.xml
 * .htaccess
